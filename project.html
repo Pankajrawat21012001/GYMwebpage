@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pankaj Fitness</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        body {
+            background: url(photo1.jpg);
+            margin: 0px;
+            padding: 0px;
+            background-repeat: no-repeat;
+        }
+
+        .left {
+            /* border: 4px solid white; */
+            color: white;
+            display: block;
+            float: left;
+            position: absolute;
+            left: 1%;
+            /* top: 1%; */
+            width: 6%;
+        }
+
+        .left div {
+            text-align: center;
+            color: #a042ff;
+            font-size: 100%;
+        }
+
+        .center {
+            /* border: 4px solid white; */
+            color: white;
+            display: block;
+            width: 50%;
+            margin: 0.5% auto;
+        }
+
+        .right {
+            /* border: 4px solid white; */
+            color: white;
+            position: absolute;
+            right: 1%;
+            top: 2%;
+            float: right;
+            width: 5%;
+        }
+
+        li {
+            display: inline-block;
+            padding-left: 10%;
+        }
+
+        a {
+            text-decoration-line: none;
+            color: #a042ff;
+            font-size: 25px;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .logo {
+            width: 60%;
+            height: 60%;
+            border-radius: 40%;
+            display: block;
+            margin: auto;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: red;
+        }
+
+        a.active {
+            color: red;
+        }
+
+        .header {
+            top: 5%;
+        }
+
+        .right img {
+            display: inline-block;
+            width: 40%;
+            height: 40%;
+            padding-right: 5%;
+        }
+
+        .container {
+            color: white;
+            margin: 10% 21px;
+            padding: 15px 15px;
+            border: 3px solid rgb(255, 255, 255);
+            width: 34%;
+            float: right;
+            border-radius: 50px;
+        }
+
+        .form-detail input {
+            width: 50%;
+            display: block;
+            padding: 18px 12px;
+            margin: 12px auto;
+            border: 2px solid blue;
+            font-size: 20px;
+            border-radius: 23px;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .container h3 {
+            text-align: center;
+            font-size: 30px;
+            color: #a042ff;
+            font-weight: bolder;
+        }
+
+        .submit-button input {
+            display: block;
+            width: 100px;
+            margin: 2px auto;
+            padding: 10px 10px;
+            color: #a042ff;
+            border-radius: 12px;
+            font-size: 20px;
+            font-weight: bolder;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img class="logo" src="icons8-dumbbell-64-removebg-preview.png" alt="LOGO">
+            <div><b>Pankaj Gym</b></div>
+        </div>
+        <!-- center for navigation -->
+        <div class="center">
+            <ul>
+                <li><a href="#" class="active"><b>Home</b></a></li>
+                <li><a href="#"><b>Plans</b></a></li>
+                <li><a href="#"><b>Centers</b></a></li>
+                <li><a href="#"><b>About Us</b></a></li>
+            </ul>
+        </div>
+        <!-- contact us and all for right -->
+        <div class="right">
+            <a href="Email"><img src="icons8-call-64-removebg-preview.png" alt="Call"></a>
+            <a href="Email"><img src="icons8-email-64-removebg-preview.png" alt="Call"></a>
+        </div>
+    </header>
+    <div class="container">
+        <h3>For more detail</h3>
+        <form action="noaction.php">
+            <div class='form-detail'>
+                <input type="text" name="myName" id="myName" placeholder="Enter your Full Name">
+            </div>
+            <div class='form-detail'>
+                <input type="email" name="myEmail" id="myEmail" placeholder="Enter your Email Id">
+            </div>
+            <div class='form-detail'>
+                <input type="number" name="myNumber" id="myNumber" placeholder="Enter your Phone number">
+            </div>
+            <div class='form-detail'>
+                <input type="number" name="myAge" id="myAge" placeholder="Enter your Age">
+            </div>
+            <div class='form-detail'>
+                <input type="text" name="myState" id="myState" placeholder="Enter your State">
+            </div>
+            <div class='form-detail'>
+                <input type="text" name="myGender" id="myGender" placeholder="Enter your Gender">
+            </div>
+            <div class='submit-button'>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
